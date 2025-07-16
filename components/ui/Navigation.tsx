@@ -7,6 +7,7 @@ const sections = [
   { id: "executive-summary", name: "エグゼクティブサマリー" },
   { id: "market-growth", name: "市場の成長性" },
   { id: "why-now", name: "なぜ今なのか" },
+  { id: "bems-challenge", name: "BEMSの課題" },
   { id: "cbre-zebhub", name: "CBREとZEBHub" },
   { id: "revenue-model", name: "収益モデル" },
   { id: "investment", name: "投資の妥当性" },

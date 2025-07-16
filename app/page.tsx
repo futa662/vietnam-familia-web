@@ -2,6 +2,7 @@ import Navigation from "@/components/ui/Navigation";
 import ExecutiveSummary from "@/components/sections/ExecutiveSummary";
 import MarketGrowth from "@/components/sections/MarketGrowth";
 import WhyNow from "@/components/sections/WhyNow";
+import BemsChallenge from "@/components/sections/BemsChallenge";
 import CbreZebhub from "@/components/sections/CbreZebhub";
 import RevenueModel from "@/components/sections/RevenueModel";
 import Investment from "@/components/sections/Investment";
@@ -17,6 +18,7 @@ export default function Home() {
         <ExecutiveSummary />
         <MarketGrowth />
         <WhyNow />
+        <BemsChallenge />
         <CbreZebhub />
         <RevenueModel />
         <Investment />
