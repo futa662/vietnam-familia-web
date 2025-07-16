@@ -193,7 +193,7 @@ export default function RevenueModel() {
               <ul className="text-sm space-y-1 mb-3">
                 <li>• 導入数: 1-2棟</li>
                 <li>• 初期費用: 1,600万円</li>
-                <li>• 月額費用: 240万円</li>
+                <li>• ランニング費用: 240万円</li>
               </ul>
               <p className="text-2xl font-bold">初年度売上: 1,840万円</p>
             </div>
@@ -204,7 +204,7 @@ export default function RevenueModel() {
               <ul className="text-sm space-y-1 mb-3">
                 <li>• 新規導入: 10棟</li>
                 <li>• 初期費用: 8,000万円</li>
-                <li>• 月額費用: 2,880万円</li>
+                <li>• ランニング費用: 2,880万円</li>
               </ul>
               <p className="text-2xl font-bold">2年目売上: 1億880万円</p>
             </div>
@@ -215,7 +215,7 @@ export default function RevenueModel() {
               <ul className="text-sm space-y-1 mb-3">
                 <li>• 新規導入: 30棟</li>
                 <li>• 初期費用: 3億円</li>
-                <li>• 月額費用: 1億80万円</li>
+                <li>• ランニング費用: 1億80万円</li>
               </ul>
               <p className="text-2xl font-bold">3年目売上: 4億80万円</p>
             </div>
