@@ -100,7 +100,7 @@ export const timelineData = [
 export const roadmapData = [
   {
     phase: "フェーズ1",
-    period: "2025年1-6月",
+    period: "2025年8月-2026年1月",
     title: "実証実験と市場検証",
     tasks: [
       "Horison Towerでの実証実験実施",
@@ -110,7 +110,7 @@ export const roadmapData = [
   },
   {
     phase: "フェーズ2",
-    period: "2025年7-12月",
+    period: "2026年2月-7月",
     title: "初期展開",
     tasks: [
       "5-10棟への展開",
@@ -120,7 +120,7 @@ export const roadmapData = [
   },
   {
     phase: "フェーズ3",
-    period: "2026年以降",
+    period: "2026年8月以降",
     title: "本格展開",
     tasks: [
       "年間20棟以上への導入",
