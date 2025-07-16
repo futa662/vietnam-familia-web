@@ -1,36 +1,125 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ベトナム事業提案書 - Web版
 
-## Getting Started
+ベトナムでのスマートビル事業（Familia Energy）に関する提案書をWebベースのインタラクティブなプレゼンテーションとして実装しました。
 
-First, run the development server:
+## 技術スタック
+
+- Next.js 14 (App Router)
+- TypeScript
+- Tailwind CSS
+- Recharts（グラフライブラリ）
+- Framer Motion（アニメーション）
+- 静的サイト生成（SSG）
+
+## セットアップ方法
+
+### 1. 依存関係のインストール
+
+```bash
+npm install
+```
+
+### 2. 開発サーバーの起動
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ブラウザで [http://localhost:3000](http://localhost:3000) を開いてください。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. プロダクションビルド
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+### 4. プロダクションサーバーの起動
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## デプロイ
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Vercelへのデプロイが推奨されます。
 
-## Deploy on Vercel
+```bash
+# Vercel CLIをインストール（未インストールの場合）
+npm i -g vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# デプロイ
+vercel
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## プロジェクト構造
+
+```
+vietnam-familia-web/
+├── app/
+│   ├── globals.css        # グローバルスタイル
+│   ├── layout.tsx         # ルートレイアウト
+│   └── page.tsx           # メインページ
+├── components/
+│   ├── sections/          # 各セクションコンポーネント
+│   │   ├── ExecutiveSummary.tsx
+│   │   ├── MarketGrowth.tsx
+│   │   ├── WhyNow.tsx
+│   │   ├── CbreZebhub.tsx
+│   │   ├── RevenueModel.tsx
+│   │   ├── Investment.tsx
+│   │   ├── RiskAnalysis.tsx
+│   │   ├── Roadmap.tsx
+│   │   └── Conclusion.tsx
+│   ├── charts/            # グラフコンポーネント
+│   │   ├── MarketGrowthChart.tsx
+│   │   ├── RevenueProjectionChart.tsx
+│   │   └── MarketSizePieChart.tsx
+│   └── ui/                # 共通UIコンポーネント
+│       └── Navigation.tsx
+└── lib/
+    └── data/              # グラフ用データ
+        └── market-data.ts
+```
+
+## 主な機能
+
+- **レスポンシブデザイン**: モバイル、タブレット、デスクトップに対応
+- **スムーズスクロール**: セクション間のナビゲーション
+- **インタラクティブグラフ**: Rechartsによるデータビジュアライゼーション
+- **アニメーション**: Framer Motionによるスクロールアニメーション
+- **プログレスインジケーター**: 読み進め状況の可視化
+- **SEO最適化**: メタデータとOGP設定
+
+## カスタマイズ
+
+### カラーテーマの変更
+
+`app/globals.css` の CSS変数を編集してください：
+
+```css
+:root {
+  --accent-color: rgb(20, 184, 166); /* Teal-500 */
+  --accent-hover: rgb(13, 148, 136); /* Teal-600 */
+}
+```
+
+### データの更新
+
+`lib/data/market-data.ts` でグラフデータを編集できます。
+
+## パフォーマンス
+
+- 静的サイト生成（SSG）により高速表示
+- 画像の最適化（Next.js Image component）
+- フォントの最適化（Next.js Font optimization）
+
+## ブラウザサポート
+
+- Chrome (最新版)
+- Firefox (最新版)
+- Safari (最新版)
+- Edge (最新版)
+
+## ライセンス
+
+このプロジェクトはハウディ株式会社の内部資料として作成されました。
